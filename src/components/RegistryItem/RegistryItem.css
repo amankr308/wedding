@@ -1,0 +1,101 @@
+.registry-item {
+    border: 1px solid #F5F5F5;
+    margin: 1em;
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.registry-item img {
+    width: 100%;
+}
+
+.registry-item p {
+    font-size: 18px;
+}
+
+.registry-item label {
+    color: rgba(0,123,255,.5);
+    font-weight: 600;
+}
+
+.registry-item p.item-name {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.registry-item a {
+    color: rgba(0, 123, 255, 0.74);
+    font-weight: 600;
+}
+
+.bought-label {
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 3em;
+}
+
+.registry-item form .check-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid #828282;
+}
+.check-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.check-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.check-container input:checked ~ .checkmark:after {
+    display: block;
+}
+.check-container .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 7px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+input[type="text"] {
+    width: 80%;
+}
+.btn {
+    background-color: #2196F3;
+    color: #fff;
+    margin-top: 1em;
+    float: right;
+    width: 30%;
+}
